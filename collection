@@ -1,0 +1,15 @@
+setChannelNames(
+    "DAPI",
+    "FITC: Source AAV1-Flpo",
+    "TRITC: Intersection",
+    "Cy5: PV",
+    "Cy7: TH"
+)
+
+setChannelColors(
+    getColorRGB(0, 0, 255), // BLUE_DAPI
+    getColorRGB(0, 255, 0), // GREEN_FITC
+    getColorRGB(255, 0, 0), // RED_TRITC
+    getColorRGB(255,0,255), // MAGENTA_Cy5
+    getColorRGB(0,255,255)  // CYAN_Cy7
+)

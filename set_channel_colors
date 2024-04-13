@@ -1,9 +1,0 @@
-
-
-setChannelColors(
-    getColorRGB(0, 0, 255), // BLUE_DAPI
-    getColorRGB(0, 255, 0), // GREEN_FITC
-    getColorRGB(255, 0, 0), // RED_TRITC
-    getColorRGB(),          // MAGENTA_Cy5
-    getColorRGB()           // CYAN_Cy7
-)
