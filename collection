@@ -1,15 +1,19 @@
+Ch_1 = "DAPI"
+Ch_2 = "FITC"
+Ch_3 = "TRITC"
+
 setChannelNames(
-    "DAPI",
-    "FITC: Source AAV1-Flpo",
-    "TRITC: Intersection",
-    "Cy5: PV",
-    "Cy7: TH"
+    Ch_1,
+    Ch_2,
+    Ch_3
 )
 
 setChannelColors(
     getColorRGB(0, 0, 255), // BLUE_DAPI
     getColorRGB(0, 255, 0), // GREEN_FITC
-    getColorRGB(255, 0, 0), // RED_TRITC
-    getColorRGB(255,0,255), // MAGENTA_Cy5
-    getColorRGB(0,255,255)  // CYAN_Cy7
+    getColorRGB(255, 0, 0)  // RED_TRITC
 )
+
+setChannelDisplayRange(Ch_1, 5000, 10500)
+setChannelDisplayRange(Ch_2, 420, 20000)
+setChannelDisplayRange(Ch_3, 1000, 4000)
