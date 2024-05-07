@@ -1,0 +1,8 @@
+aclearAllObjects()
+qupath.ext.biop.abba.AtlasTools.loadWarpedAtlasAnnotations(getCurrentImageData(), "acronym", true);
+
+// This code gets rid of all the annotations I dont care about 
+listOfRegionsToKeep=['CP', 'STN', 'ZI', 'GPi', 'PF', "GPe", "sm"]
+def myObjectsToKeep = getAnnotationObjects().findAll{it.getName() in listOfRegionsToKeep}
+def objectsOtherThan = getAnnotationObjects() - myObjectsToKeep
+removeObjects(objectsOtherThan, true)
