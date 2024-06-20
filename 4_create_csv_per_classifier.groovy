@@ -1,3 +1,6 @@
+import qupath.lib.gui.tools.MeasurementExporter
+import qupath.lib.objects.PathDetectionObject
+
 // Get the list of all images in the current project
 def project = getProject()
 def imagesToExport = project.getImageList()
@@ -12,7 +15,7 @@ def columnsToInclude = new String[]{"Allen CCFv3 X mm", "Allen CCFv3 Y mm", "All
 def exportType = PathDetectionObject.class
 
 // Choose your *full* output path
-def outputPath = "C:/Users/walla/Desktop/QuPath Export/out.tsv"
+def outputPath = "C:/Users/walla/Desktop/Trace6_03.tsv"
 def outputFile = new File(outputPath)
 
 // Create the measurementExporter and start the export
