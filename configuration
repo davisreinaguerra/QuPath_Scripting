@@ -1,38 +1,15 @@
-// 3 Channels
-
-Ch_1 = "DAPI"
-Ch_2 = "FITC"
-Ch_3 = "TRITC"
-
-setChannelNames(
-    Ch_1,
-    Ch_2,
-    Ch_3
-)
-
-setChannelColors(
-    getColorRGB(0, 0, 255), // BLUE_DAPI
-    getColorRGB(0, 255, 0), // GREEN_FITC
-    getColorRGB(255, 0, 0)  // RED_TRITC
-)
-
-setChannelDisplayRange(Ch_1, 5000, 10500)
-setChannelDisplayRange(Ch_2, 420, 20000)
-setChannelDisplayRange(Ch_3, 1000, 4000)
-
-// Five Channels
-Ch_1 = "DAPI"
-Ch_2 = "FITC"
-Ch_3 = "TRITC"
-Ch_4 = "Cy5"
-Ch_5 = "Cy7"
+Ch_DAPI = "DAPI"
+Ch_FITC = "FITC"
+Ch_TRITC = "TRITC"
+Ch_Cy5 = "Cy5"
+Ch_Cy7 = "Cy7"
 
 setChannelNames(
-    Ch_1,
-    Ch_2,
-    Ch_3,
-    Ch_4,
-    Ch_5
+    Ch_DAPI,
+    Ch_FITC,
+    Ch_TRITC,
+    Ch_Cy5,
+    Ch_Cy7
 )
 
 setChannelColors(
@@ -43,8 +20,8 @@ setChannelColors(
     getColorRGB(0,255,255)  // CYAN, Cy7
 )
 
-setChannelDisplayRange(Ch_1, 5000, 10500)
-setChannelDisplayRange(Ch_2, 420, 20000)
-setChannelDisplayRange(Ch_3, 300, 1000)
-setChannelDisplayRange(Ch_4, 350, 2400)
-setChannelDisplayRange(Ch_5, 300, 12000)
+//setChannelDisplayRange(Ch_DAPI, 5000, 10500)
+//setChannelDisplayRange(Ch_FITC, 420, 20000)
+//setChannelDisplayRange(Ch_TRITC, 300, 1000)
+//setChannelDisplayRange(Ch_Cy5, 350, 2400)
+//setChannelDisplayRange(Ch_Cy7, 300, 12000)
