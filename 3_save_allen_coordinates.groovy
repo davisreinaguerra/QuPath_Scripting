@@ -4,7 +4,7 @@ import qupath.ext.biop.abba.AtlasTools
 import qupath.lib.gui.tools.MeasurementExporter
 import qupath.lib.objects.PathDetectionObject
 
-import static qupath.lib.gui.scripting.QPEx.* // For intellij editor autocompletion
+import static qupath.lib.gui.scripting.QPEx.*
 
 /**
  * Computes the centroid coordinates of each detection within the atlas
