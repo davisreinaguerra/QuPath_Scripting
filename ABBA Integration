@@ -1,4 +1,4 @@
-aclearAllObjects()
+clearAllObjects()
 qupath.ext.biop.abba.AtlasTools.loadWarpedAtlasAnnotations(getCurrentImageData(), "acronym", true);
 
 // This code gets rid of all the annotations I dont care about 
